@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.word_span {
+  font-style: italic !important;
+  color: #0d6efd !important;
+}
+
+.feature_desc {
+  font-size: 1.25rem;
+  font-weight: 600 !important;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.blog_form_label,
+.blog_form_textarea {
+  color: #0d6efd !important;
+  font-weight: 600 !important;
+}
+
+.edit_form_heading {
+  text-align: center;
+  font-weight: 700 !important;
+  padding: 0.25rem !important;
+}

@@ -1,0 +1,16 @@
+.manage_auth_para {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.card.adm_stat_card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.card.adm_stat_card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0;
+}

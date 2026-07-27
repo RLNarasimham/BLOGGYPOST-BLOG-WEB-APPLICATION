@@ -1,0 +1,23 @@
+.card.adm_dash_card {
+  background-color: rgba(92, 122, 255, 0.831) !important;
+  color: white !important;
+  transition:
+    transform 0.3s ease-in,
+    box-shadow 0.3s ease-in !important;
+}
+
+.card.adm_dash_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card.adm_stat_card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease !important;
+}
+
+.card.adm_stat_card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0;
+}

@@ -1,0 +1,18 @@
+.navbar-brand img {
+  max-width: 55px;
+  border-radius: 15px;
+  height: auto;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: #0d6efd;
+  border-radius: 20px;
+}
+
+.nav-item:hover .nav-link {
+  color: white;
+}

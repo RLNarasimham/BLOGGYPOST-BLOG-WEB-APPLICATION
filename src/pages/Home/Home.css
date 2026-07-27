@@ -1,0 +1,53 @@
+.hero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+}
+
+.hero .hero_subhead p {
+  text-align: justify;
+}
+
+.hero .discover_span,
+.hero .share_span,
+.hero .stay_span,
+.hero .brand_name_div {
+  font-size: x-large;
+  font-weight: 700;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.hero .discover_span:hover,
+.hero .share_span:hover,
+.hero .stay_span:hover {
+  font-size: xx-large;
+  cursor: pointer;
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+
+.hero_heading {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.hero .brand_name_div:hover {
+  font-size: xx-large;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.card_feat_cat,
+.card_lat_blogs {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_feat_cat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #0d6efd;
+}
+
+.card_lat_blogs:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #0dcaf0;
+}

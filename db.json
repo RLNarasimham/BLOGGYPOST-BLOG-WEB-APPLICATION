@@ -1,0 +1,307 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Top React Best Practices Every Beginner Should Follow",
+      "category": "Programming",
+      "authorId": 1,
+      "image": "https://images.unsplash.com/photo-1687603921109-46401b201195?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "excerpt": "Learn essential React practices that help you write cleaner, reusable, and maintainable code.",
+      "content": "React makes building user interfaces simple and efficient when you follow good development practices. Start by organizing your components into reusable pieces, keep state as local as possible, and use descriptive variable names. Avoid unnecessary re-renders by using keys correctly and keeping components focused on a single responsibility. As your project grows, maintain a clear folder structure, use React Router for navigation, and separate business logic from UI components. These habits will make your applications easier to debug, maintain, and scale.",
+      "publishedAt": "2026-07-11"
+    },
+    {
+      "id": "2",
+      "title": "Bootstrap 5 TIPS for Building Responsive Web Applications",
+      "category": "Education",
+      "authorId": 2,
+      "image": "https://www.weblineindia.com/wp-content/uploads/2014/04/responsive-webdesign-1.jpg",
+      "excerpt": "Learn how Bootstrap 5 helps developers create responsive, mobile-friendly web applications with minimal effort.",
+      "content": "Bootstrap 5 is a powerful CSS framework that enables developers to build responsive and visually appealing web applications quickly. Its flexible grid system, utility classes, and pre-built components make it easy to create layouts that adapt seamlessly to different screen sizes. Features like responsive navigation bars, cards, forms, buttons, and spacing utilities help maintain consistency across an application. When combined with React, Bootstrap allows developers to focus on application logic while delivering a modern and user-friendly interface. Understanding Bootstrap's responsive breakpoints, layout system, and reusable components is an essential skill for every front-end developer.",
+      "publishedAt": "2026-07-14"
+    },
+    {
+      "id": "3",
+      "title": "The Future of Artificial Intelligence in Everyday Life",
+      "category": "Technology",
+      "authorId": 3,
+      "image": "https://images.unsplash.com/photo-1744640326166-433469d102f2?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "excerpt": "Artificial Intelligence is becoming part of our daily routine in more ways than ever before.",
+      "content": "Artificial Intelligence is powering recommendation systems, voice assistants, healthcare applications, and smart automation tools. Businesses use AI to improve customer service, analyze data, and automate repetitive tasks. As AI technology continues to evolve, developers must understand ethical considerations, privacy concerns, and responsible AI practices. Learning AI fundamentals today can open exciting career opportunities in the future.",
+      "publishedAt": "2026-07-09"
+    },
+    {
+      "id": "4",
+      "title": "5 Travel Habits That Make Every Trip More Enjoyable",
+      "category": "Travel",
+      "authorId": 4,
+      "image": "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "excerpt": "Simple travel habits can help you save money, reduce stress, and create unforgettable memories.",
+      "content": "Planning ahead is one of the best ways to enjoy traveling. Research destinations, prepare a flexible itinerary, and pack only what you need. Always keep digital copies of important documents and try local food while respecting local customs. Budgeting for unexpected expenses and choosing sustainable travel options can make your journey smoother and more meaningful. Every trip becomes a learning experience when you stay curious and open-minded.",
+      "publishedAt": "2026-07-08"
+    },
+    {
+      "id": "5",
+      "title": "Healthy LIFESTYLE Habits for a Productive Workday",
+      "category": "Lifestyle",
+      "authorId": 5,
+      "image": "https://images.unsplash.com/photo-1594046243063-de5ca9e107be?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "excerpt": "Small daily habits can improve your physical health, mental well-being, and productivity.",
+      "content": "Maintaining a healthy lifestyle doesn't require drastic changes. Begin your day with a balanced breakfast, stay hydrated, and include regular physical activity in your routine. Taking short breaks during work helps reduce stress and improves focus. Getting enough sleep and limiting screen time before bed contribute to better overall health. Consistency with small positive habits often leads to long-term improvements in productivity and quality of life.",
+      "publishedAt": "2026-07-07"
+    },
+    {
+      "id": "6",
+      "title": "Getting started with REST APIs in React Applications",
+      "category": "Technology",
+      "authorId": 2,
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "excerpt": "Discover how ReactAPPLICATION communicate with backend services using REST APIs and Axios.",
+      "content": "REST APIs allow React applications to exchange data with backend servers efficiently. By using libraries such as Axios or the Fetch API, developers can perform CRUD operations including creating, reading, updating, and deleting data. Understanding HTTP methods like GET, POST, PUT, PATCH, and DELETE is essential for building modern web applications. Organizing API calls, handling loading states, managing errors gracefully, and keeping components reusable are considered best practices. Mastering REST API integration is a valuable skill for every React developer building dynamic, data-driven applications.",
+      "publishedAt": "2026-07-14"
+    },
+    {
+      "id": "7",
+      "title": "Understanding React Hooks: useState and useEffect Explained",
+      "category": "Programming",
+      "authorId": 2,
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1470&auto=format&fit=crop",
+      "excerpt": "Master the two most commonly used React Hooks for managing state and side effects in functional components.",
+      "content": "React Hooks simplify component development by allowing functional components to manage state and lifecycle behavior. The useState Hook helps developers store and update component data, while useEffect performs side effects such as fetching data, updating the document title, or subscribing to events. Understanding when and how these Hooks execute is essential for building efficient React applications. Combining Hooks with reusable components results in cleaner, more maintainable code.",
+      "publishedAt": "2026-07-15"
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "Aarav Sharma",
+      "email": "aarav@bloggypost.com",
+      "password": "author123",
+      "role": "author"
+    },
+    {
+      "id": "2",
+      "name": "Priya Kompella",
+      "email": "priya@bloggypost.com",
+      "password": "author123",
+      "role": "author"
+    },
+    {
+      "id": "3",
+      "name": "Rahul Verma",
+      "email": "rahul@bloggypost.com",
+      "password": "author123",
+      "role": "author"
+    },
+    {
+      "id": "4",
+      "name": "Sneha Patel",
+      "email": "sneha@bloggypost.com",
+      "password": "author123",
+      "role": "author"
+    },
+    {
+      "id": "5",
+      "name": "Vikram Singh",
+      "email": "vikram@bloggypost.com",
+      "password": "vikram@123",
+      "role": "author"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "name": "BloggyPost Administrator",
+      "email": "admin@bloggypost.com",
+      "password": "adminBP2003",
+      "role": "admin"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "blogId": 1,
+      "name": "John",
+      "message": "Very informative article. The React best practices were explained clearly."
+    },
+    {
+      "id": "2",
+      "blogId": 1,
+      "name": "Sarah",
+      "message": "Excellent article! I learned several useful tips for writing cleaner React code."
+    },
+    {
+      "id": "3",
+      "blogId": 2,
+      "name": "David",
+      "message": "Online learning has really changed the way students gain new skills."
+    },
+    {
+      "id": "4",
+      "blogId": 2,
+      "name": "Emily",
+      "message": "Great explanation. The examples made the topic easy to understand."
+    },
+    {
+      "id": "5",
+      "blogId": 3,
+      "name": "Michael",
+      "message": "AI is evolving rapidly. This article provided a balanced overview."
+    },
+    {
+      "id": "6",
+      "blogId": 3,
+      "name": "Sophia",
+      "message": "Interesting read! Looking forward to learning more about AI applications."
+    },
+    {
+      "id": "7",
+      "blogId": 4,
+      "name": "Daniel",
+      "message": "These travel tips are practical and easy to follow. Thanks for sharing!"
+    },
+    {
+      "id": "8",
+      "blogId": 4,
+      "name": "Olivia",
+      "message": "Packing light has always helped me during trips. Nice suggestions!"
+    },
+    {
+      "id": "9",
+      "blogId": 5,
+      "name": "James",
+      "message": "Healthy habits really make a difference in staying productive throughout the day."
+    },
+    {
+      "id": "10",
+      "blogId": 5,
+      "name": "Emma",
+      "message": "A simple yet motivating article. I'll definitely start following these lifestyle habits."
+    },
+    {
+      "blogId": 2,
+      "name": "narasimham",
+      "message": "very informative content..!! loved it ",
+      "id": "-bzMtd8LWKY"
+    },
+    {
+      "blogId": 2,
+      "name": "john",
+      "message": "sample comment",
+      "id": "4djwXHd0i28"
+    },
+    {
+      "blogId": 2,
+      "name": "Rahul Kumar",
+      "message": "Interesting Post!!! Great Work Priya!",
+      "id": "_k0kkQBnXmg"
+    },
+    {
+      "blogId": 2,
+      "name": "D2a3vid",
+      "message": "loved the wording and perspective!!!! a must read",
+      "id": "UJL9pVU8Ut4"
+    },
+    {
+      "blogId": 2,
+      "name": "greg",
+      "message": "nice blog... a must read for students of all standards!!",
+      "id": "LoetjDf9zDs"
+    },
+    {
+      "blogId": 3,
+      "name": "John",
+      "message": "Loved the Blog!! Great Work",
+      "id": "bhLbeUuViLc"
+    },
+    {
+      "blogId": 6,
+      "name": "narasimham",
+      "message": "great work...!! Well explained",
+      "id": "MjqHwTldDUk"
+    },
+    {
+      "blogId": 2,
+      "name": "george",
+      "message": "Wonderful explanation...!!! A Must Read for Developers",
+      "id": "5KA9w3gltU0"
+    },
+    {
+      "blogId": 7,
+      "name": "ravi",
+      "message": "Great work and Well explained!! Loved it",
+      "id": "4GoBnwpbisM"
+    },
+    {
+      "blogId": 3,
+      "name": "narasimham",
+      "message": "fantastic explanation!!",
+      "id": "wcQ6gJVksBk"
+    },
+    {
+      "blogId": 8,
+      "name": "geetesh",
+      "message": "good work.... Worth reading !!!",
+      "id": "nIcO13Frigg"
+    },
+    {
+      "blogId": 8,
+      "name": "hemanth",
+      "message": "greate work.... bravo!!",
+      "id": "bXeTwt2mjic"
+    },
+    {
+      "blogId": 2,
+      "name": "sam",
+      "message": "good explanation!! Loved it!!",
+      "id": "BQzMldXWxKY"
+    },
+    {
+      "blogId": 1,
+      "name": "ramya",
+      "message": "great work!! nicely explained",
+      "id": "P_nSzrD_XOY"
+    },
+    {
+      "blogId": 7,
+      "name": "Rama",
+      "message": "Fantastic explanation!!",
+      "id": "J8g1rc3tRtY"
+    },
+    {
+      "blogId": 2,
+      "name": "Rama",
+      "message": "Great work!!! Worth Reading!",
+      "id": "IV-NJu_K4M0"
+    },
+    {
+      "blogId": 2,
+      "name": "James",
+      "message": "Great Work!",
+      "id": "FYl75RwVbGk"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Technology"
+    },
+    {
+      "id": "2",
+      "name": "Education"
+    },
+    {
+      "id": "3",
+      "name": "Programming"
+    },
+    {
+      "id": "4",
+      "name": "Travel"
+    },
+    {
+      "id": "5",
+      "name": "Lifestyle"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

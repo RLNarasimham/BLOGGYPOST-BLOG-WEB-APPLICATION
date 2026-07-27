@@ -1,0 +1,15 @@
+.add_blog_heading {
+  text-align: center;
+  font-weight: 700 !important;
+  padding: 0.25rem !important;
+}
+
+@media (min-width: 992px) {
+  .add_blog_heading {
+    padding: 0.5rem !important;
+  }
+
+  .feature_desc {
+    padding: 0.5rem !important;
+  }
+}

@@ -1,0 +1,11 @@
+.my_blogs_para {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .my_blogs_para {
+    padding: 0.5rem;
+  }
+}
