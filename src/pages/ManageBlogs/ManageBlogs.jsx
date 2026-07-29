@@ -3,6 +3,7 @@ import "./ManageBlogs.css";
 import { AuthContext } from "../../context/AuthContext";
 import { Link } from "react-router";
 import axios from "axios";
+import api from "../../api";
 
 const ManageBlogs = () => {
   const { currentUser } = useContext(AuthContext);
@@ -20,7 +21,7 @@ const ManageBlogs = () => {
 
   const getAllBlogs = () => {
     axios
-      .get("http://localhost:5000/blogs")
+      .get("/blogs")
       .then((response) => {
         setBlogs(response.data);
       })
@@ -32,7 +33,7 @@ const ManageBlogs = () => {
 
   const getAllCategories = () => {
     axios
-      .get("http://localhost:5000/categories")
+      .get("/categories")
       .then((response) => {
         const categoryData = Array.isArray(response.data) ? response.data : [];
         setCategories(categoryData);
@@ -45,7 +46,7 @@ const ManageBlogs = () => {
 
   const getAllAuthors = () => {
     axios
-      .get("http://localhost:5000/authors")
+      .get("/authors")
       .then((response) => {
         const authorData = Array.isArray(response.data) ? response.data : [];
         setAuthors(authorData);
@@ -77,7 +78,7 @@ const ManageBlogs = () => {
     }
 
     axios
-      .delete(`http://localhost:5000/blogs/${id}`)
+      .delete(`/blogs/${id}`)
       .then(() => {
         alert("Blog has been deleted successfully!!!");
         getAllBlogs();

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./MyBlogs.css";
 import axios from "axios";
+import api from "../../api";
 import { Link } from "react-router";
 import { AuthContext } from "../../context/AuthContext";
 
@@ -17,7 +18,7 @@ const MyBlogs = () => {
 
   const getAuthBlogs = () => {
     axios
-      .get(`http://localhost:5000/blogs`)
+      .get(`/blogs`)
       .then((response) => {
         setBlogs(response.data);
       })
@@ -37,7 +38,7 @@ const MyBlogs = () => {
     }
 
     axios
-      .delete(`http://localhost:5000/blogs/${id}`)
+      .delete(`/blogs/${id}`)
       .then(() => {
         alert("Blog has been Deleted Successfully!!");
         getAuthBlogs();
@@ -50,7 +51,7 @@ const MyBlogs = () => {
 
   const getComments = () => {
     axios
-      .get("http://localhost:5000/comments")
+      .get("/comments")
       .then((response) => {
         setComments(response.data);
       })

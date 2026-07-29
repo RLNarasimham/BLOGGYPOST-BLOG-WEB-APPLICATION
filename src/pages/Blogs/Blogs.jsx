@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import api from "../../api";
 import { Link } from "react-router";
 
 const Blogs = () => {
@@ -18,7 +19,7 @@ const Blogs = () => {
 
   const getBlogs = () => {
     axios
-      .get(`http://localhost:5000/blogs`)
+      .get(`/blogs`)
       .then((response) => setBlogs(response.data))
       .catch((error) => {
         console.log(error);
@@ -30,7 +31,7 @@ const Blogs = () => {
 
   const getCategories = () => {
     axios
-      .get("http://localhost:5000/categories")
+      .get("/categories")
       .then((response) => {
         const categoryData = Array.isArray(response.data) ? response.data : [];
         setCategories(categoryData);
@@ -45,7 +46,7 @@ const Blogs = () => {
 
   const getAuthors = () => {
     axios
-      .get(`http://localhost:5000/authors`)
+      .get(`/authors`)
       .then((response) => {
         setAuthors(response.data);
       })

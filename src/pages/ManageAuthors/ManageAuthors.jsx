@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import api from "../../api";
 import { Link } from "react-router";
 import ViewAuthModal from "../../components/ViewAuthModal/ViewAuthModal";
 import "./ManageAuthors.css";
@@ -21,7 +22,7 @@ const ManageAuthors = () => {
 
   const getAllAuthors = () => {
     axios
-      .get("http://localhost:5000/authors")
+      .get("/authors")
       .then((response) => {
         setTotalAuthors(response.data);
       })
@@ -33,7 +34,7 @@ const ManageAuthors = () => {
 
   const getAllBlogs = () => {
     axios
-      .get("http://localhost:5000/blogs")
+      .get("/blogs")
       .then((response) => {
         setTotalBlogs(response.data);
       })
@@ -45,7 +46,7 @@ const ManageAuthors = () => {
 
   const getAllComments = () => {
     axios
-      .get("http://localhost:5000/comments")
+      .get("/comments")
       .then((response) => {
         setTotalComments(response.data);
       })
@@ -95,7 +96,7 @@ const ManageAuthors = () => {
     if (!confirmDeleteAuthor) return;
 
     axios
-      .delete(`http://localhost:5000/authors/${author.id}`)
+      .delete(`/authors/${author.id}`)
       .then(() => {
         alert("Author has been Deleted successfully!!");
         getAllAuthors();

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router";
 import axios from "axios";
+import api from "../../api";
 import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
@@ -28,7 +29,7 @@ const Login = () => {
     }
 
     axios
-      .get("http://localhost:5000/authors")
+      .get("/authors")
       .then((response) => {
         const author = response.data.find((author) => {
           return (

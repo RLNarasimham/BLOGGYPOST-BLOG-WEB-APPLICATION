@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import api from "../../api";
 import hero_section_image from "../../assets/images/hero_section_image.jpg";
 import technology_image from "../../assets/images/technology_image.jpg";
 import education_image from "../../assets/images/education_image.jpg";
@@ -24,7 +25,7 @@ const Home = () => {
 
   const getBlogs = () => {
     axios
-      .get("http://localhost:5000/blogs")
+      .get("/blogs")
       .then((response) => {
         setBlogs(response.data);
 
@@ -44,7 +45,7 @@ const Home = () => {
 
   const getAuthors = () => {
     axios
-      .get("http://localhost:5000/authors")
+      .get("/authors")
       .then((response) => {
         setAuthors(response.data);
       })
