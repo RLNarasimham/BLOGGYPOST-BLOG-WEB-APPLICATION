@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import api from "../../api";
 import { useParams, useNavigate } from "react-router";
 
 const AdmEditBlog = () => {
@@ -23,7 +24,7 @@ const AdmEditBlog = () => {
 
   const getBlog = (blogId) => {
     axios
-      .get(`http://localhost:5000/blogs/${blogId}`)
+      .get(`/blogs/${blogId}`)
       .then((response) => {
         setBlog(response.data);
       })
@@ -35,7 +36,7 @@ const AdmEditBlog = () => {
 
   const getCategories = () => {
     axios
-      .get("http://localhost:5000/categories")
+      .get("/categories")
       .then((response) => {
         setCategories(response.data);
       })
@@ -75,7 +76,7 @@ const AdmEditBlog = () => {
     };
 
     axios
-      .put(`http://localhost:5000/blogs/${id}`, updatedBlog)
+      .put(`/blogs/${id}`, updatedBlog)
       .then(() => {
         alert("Blog updated successfully!!");
         navigate("/admin/blogs");

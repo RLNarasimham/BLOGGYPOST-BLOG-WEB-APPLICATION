@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import api from "../../api";
 import { useNavigate } from "react-router";
 import { AuthContext } from "../../context/AuthContext";
 import "./AddBlog.css";
@@ -23,7 +24,7 @@ const AddBlog = () => {
 
   const getCategories = () => {
     axios
-      .get(`http://localhost:5000/categories`)
+      .get(`/categories`)
       .then((response) => {
         setCategories(response.data);
       })
@@ -45,7 +46,7 @@ const AddBlog = () => {
     };
 
     axios
-      .post(`http://localhost:5000/blogs`, newBlog)
+      .post(`/blogs`, newBlog)
       .then(() => {
         alert("Blog published successfully!!");
         navigate("/author/blogs");

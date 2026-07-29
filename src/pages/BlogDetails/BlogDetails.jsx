@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import api from "../../api";
 import { Link, useParams } from "react-router";
 
 const BlogDetails = () => {
@@ -20,7 +21,7 @@ const BlogDetails = () => {
 
   const getBlog = () => {
     axios
-      .get(`http://localhost:5000/blogs/${id}`)
+      .get(`/blogs/${id}`)
       .then((response) => {
         setBlog(response.data);
         getAuthor(response.data.authorId);
@@ -32,14 +33,14 @@ const BlogDetails = () => {
 
   const getAuthor = (authorId) => {
     axios
-      .get(`http://localhost:5000/authors/${authorId}`)
+      .get(`/authors/${authorId}`)
       .then((response) => setAuthor(response.data))
       .catch((error) => alert(error));
   };
 
   const getComments = () => {
     axios
-      .get(`http://localhost:5000/comments?blogId=${id}`)
+      .get(`/comments?blogId=${id}`)
       .then((response) => {
         setComments(response.data);
       })
@@ -68,7 +69,7 @@ const BlogDetails = () => {
     };
 
     axios
-      .post(`http://localhost:5000/comments`, newComment)
+      .post(`/comments`, newComment)
       .then(() => {
         getComments();
         setName("");

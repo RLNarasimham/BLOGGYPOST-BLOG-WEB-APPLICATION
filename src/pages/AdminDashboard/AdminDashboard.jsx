@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
 import axios from "axios";
+import api from "../../api";
 import { AuthContext } from "../../context/AuthContext";
 import "./AdminDashboard.css";
 
@@ -29,7 +30,7 @@ const AdminDashboard = () => {
 
   const getAllBlogs = () => {
     axios
-      .get("http://localhost:5000/blogs")
+      .get("/blogs")
       .then((response) => {
         setTotalBlogs(response.data);
       })
@@ -41,7 +42,7 @@ const AdminDashboard = () => {
 
   const getAllAuthors = () => {
     axios
-      .get("http://localhost:5000/authors")
+      .get("/authors")
       .then((response) => {
         setTotalAuthors(response.data);
       })
@@ -53,7 +54,7 @@ const AdminDashboard = () => {
 
   const getAllComments = () => {
     axios
-      .get("http://localhost:5000/comments")
+      .get("/comments")
       .then((response) => {
         setTotalComments(response.data);
       })
@@ -65,7 +66,7 @@ const AdminDashboard = () => {
 
   const getAllCategories = () => {
     axios
-      .get("http://localhost:5000/categories")
+      .get("/categories")
       .then((response) => {
         setTotalCategories(response.data);
       })

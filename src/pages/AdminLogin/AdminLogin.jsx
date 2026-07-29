@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import api from "../../api";
 import { AuthContext } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router";
 
@@ -18,7 +19,7 @@ const AdminLogin = () => {
 
   const getAdmins = () => {
     axios
-      .get("http://localhost:5000/admins")
+      .get("/admins")
       .then((response) => {
         setAdmins(response.data);
       })

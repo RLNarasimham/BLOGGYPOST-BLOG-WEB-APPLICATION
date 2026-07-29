@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
 import axios from "axios";
+import api from "../../api";
 
 const AdmEditAuthor = () => {
   const [author, setAuthor] = useState({
@@ -21,7 +22,7 @@ const AdmEditAuthor = () => {
 
   const getAuthor = (authorId) => {
     axios
-      .get(`http://localhost:5000/authors/${authorId}`)
+      .get(`/authors/${authorId}`)
       .then((response) => {
         setAuthor(response.data);
       })
@@ -59,7 +60,7 @@ const AdmEditAuthor = () => {
     };
 
     axios
-      .put(`http://localhost:5000/authors/${id}`, updatedAuthor)
+      .put(`/authors/${id}`, updatedAuthor)
       .then(() => {
         alert("Author has been updated successfully!");
         navigate("/admin/authors");
