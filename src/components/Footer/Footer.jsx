@@ -60,31 +60,31 @@ const Footer = () => {
             </h5>
             <ul className="fw-semibold p-2 list-unstyled fst-italic">
               <li>
-                <Link to="/" className="text-decoration-none">
+                <Link to="/blogs" className="text-decoration-none">
                   Technology
                 </Link>
               </li>
 
               <li>
-                <Link to="/" className="text-decoration-none">
+                <Link to="/blogs" className="text-decoration-none">
                   Education
                 </Link>
               </li>
 
               <li>
-                <Link to="/" className="text-decoration-none">
+                <Link to="/blogs" className="text-decoration-none">
                   Programming
                 </Link>
               </li>
 
               <li>
-                <Link to="/" className="text-decoration-none">
+                <Link to="/blogs" className="text-decoration-none">
                   Travel
                 </Link>
               </li>
 
               <li>
-                <Link to="/" className="text-decoration-none">
+                <Link to="/blogs" className="text-decoration-none">
                   Lifestyle
                 </Link>
               </li>
