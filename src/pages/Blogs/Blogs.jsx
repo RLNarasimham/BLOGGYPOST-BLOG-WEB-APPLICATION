@@ -18,7 +18,7 @@ const Blogs = () => {
   }, []);
 
   const getBlogs = () => {
-    axios
+    api
       .get(`/blogs`)
       .then((response) => setBlogs(response.data))
       .catch((error) => {
@@ -30,7 +30,7 @@ const Blogs = () => {
   };
 
   const getCategories = () => {
-    axios
+    api
       .get("/categories")
       .then((response) => {
         const categoryData = Array.isArray(response.data) ? response.data : [];
@@ -45,7 +45,7 @@ const Blogs = () => {
   };
 
   const getAuthors = () => {
-    axios
+    api
       .get(`/authors`)
       .then((response) => {
         setAuthors(response.data);

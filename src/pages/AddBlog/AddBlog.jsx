@@ -23,7 +23,7 @@ const AddBlog = () => {
   }, []);
 
   const getCategories = () => {
-    axios
+    api
       .get(`/categories`)
       .then((response) => {
         setCategories(response.data);
@@ -45,7 +45,7 @@ const AddBlog = () => {
       publishedAt: new Date().toLocaleString("en-IN"),
     };
 
-    axios
+    api
       .post(`/blogs`, newBlog)
       .then(() => {
         alert("Blog published successfully!!");

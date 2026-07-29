@@ -20,7 +20,7 @@ const BlogDetails = () => {
   }, []);
 
   const getBlog = () => {
-    axios
+    api
       .get(`/blogs/${id}`)
       .then((response) => {
         setBlog(response.data);
@@ -32,14 +32,14 @@ const BlogDetails = () => {
   };
 
   const getAuthor = (authorId) => {
-    axios
+    api
       .get(`/authors/${authorId}`)
       .then((response) => setAuthor(response.data))
       .catch((error) => alert(error));
   };
 
   const getComments = () => {
-    axios
+    api
       .get(`/comments?blogId=${id}`)
       .then((response) => {
         setComments(response.data);
@@ -68,7 +68,7 @@ const BlogDetails = () => {
       message: message,
     };
 
-    axios
+    api
       .post(`/comments`, newComment)
       .then(() => {
         getComments();

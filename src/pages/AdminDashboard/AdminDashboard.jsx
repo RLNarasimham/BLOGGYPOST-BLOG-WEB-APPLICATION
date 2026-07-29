@@ -29,7 +29,7 @@ const AdminDashboard = () => {
   }, [totalCategories]);
 
   const getAllBlogs = () => {
-    axios
+    api
       .get("/blogs")
       .then((response) => {
         setTotalBlogs(response.data);
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
   };
 
   const getAllAuthors = () => {
-    axios
+    api
       .get("/authors")
       .then((response) => {
         setTotalAuthors(response.data);
@@ -53,7 +53,7 @@ const AdminDashboard = () => {
   };
 
   const getAllComments = () => {
-    axios
+    api
       .get("/comments")
       .then((response) => {
         setTotalComments(response.data);
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
   };
 
   const getAllCategories = () => {
-    axios
+    api
       .get("/categories")
       .then((response) => {
         setTotalCategories(response.data);

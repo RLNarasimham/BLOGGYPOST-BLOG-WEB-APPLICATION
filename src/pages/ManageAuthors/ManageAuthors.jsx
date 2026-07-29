@@ -21,7 +21,7 @@ const ManageAuthors = () => {
   }, []);
 
   const getAllAuthors = () => {
-    axios
+    api
       .get("/authors")
       .then((response) => {
         setTotalAuthors(response.data);
@@ -33,7 +33,7 @@ const ManageAuthors = () => {
   };
 
   const getAllBlogs = () => {
-    axios
+    api
       .get("/blogs")
       .then((response) => {
         setTotalBlogs(response.data);
@@ -45,7 +45,7 @@ const ManageAuthors = () => {
   };
 
   const getAllComments = () => {
-    axios
+    api
       .get("/comments")
       .then((response) => {
         setTotalComments(response.data);
@@ -95,7 +95,7 @@ const ManageAuthors = () => {
 
     if (!confirmDeleteAuthor) return;
 
-    axios
+    api
       .delete(`/authors/${author.id}`)
       .then(() => {
         alert("Author has been Deleted successfully!!");

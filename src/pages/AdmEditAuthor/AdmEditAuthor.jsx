@@ -21,7 +21,7 @@ const AdmEditAuthor = () => {
   }, [id]);
 
   const getAuthor = (authorId) => {
-    axios
+    api
       .get(`/authors/${authorId}`)
       .then((response) => {
         setAuthor(response.data);
@@ -59,7 +59,7 @@ const AdmEditAuthor = () => {
       id: id,
     };
 
-    axios
+    api
       .put(`/authors/${id}`, updatedAuthor)
       .then(() => {
         alert("Author has been updated successfully!");

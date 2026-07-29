@@ -20,7 +20,7 @@ const ManageBlogs = () => {
   }, []);
 
   const getAllBlogs = () => {
-    axios
+    api
       .get("/blogs")
       .then((response) => {
         setBlogs(response.data);
@@ -32,7 +32,7 @@ const ManageBlogs = () => {
   };
 
   const getAllCategories = () => {
-    axios
+    api
       .get("/categories")
       .then((response) => {
         const categoryData = Array.isArray(response.data) ? response.data : [];
@@ -45,7 +45,7 @@ const ManageBlogs = () => {
   };
 
   const getAllAuthors = () => {
-    axios
+    api
       .get("/authors")
       .then((response) => {
         const authorData = Array.isArray(response.data) ? response.data : [];
@@ -77,7 +77,7 @@ const ManageBlogs = () => {
       return;
     }
 
-    axios
+    api
       .delete(`/blogs/${id}`)
       .then(() => {
         alert("Blog has been deleted successfully!!!");

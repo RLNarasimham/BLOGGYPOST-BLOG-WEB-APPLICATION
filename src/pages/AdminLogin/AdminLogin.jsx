@@ -18,7 +18,7 @@ const AdminLogin = () => {
   });
 
   const getAdmins = () => {
-    axios
+    api
       .get("/admins")
       .then((response) => {
         setAdmins(response.data);

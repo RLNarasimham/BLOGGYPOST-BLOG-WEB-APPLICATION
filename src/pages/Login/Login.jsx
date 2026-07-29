@@ -28,7 +28,7 @@ const Login = () => {
       return;
     }
 
-    axios
+    api
       .get("/authors")
       .then((response) => {
         const author = response.data.find((author) => {

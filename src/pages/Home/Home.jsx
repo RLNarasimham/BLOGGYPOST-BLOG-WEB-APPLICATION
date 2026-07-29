@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   const getBlogs = () => {
-    axios
+    api
       .get("/blogs")
       .then((response) => {
         setBlogs(response.data);
@@ -44,7 +44,7 @@ const Home = () => {
   };
 
   const getAuthors = () => {
-    axios
+    api
       .get("/authors")
       .then((response) => {
         setAuthors(response.data);

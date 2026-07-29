@@ -23,7 +23,7 @@ const AdmEditBlog = () => {
   }, [id]);
 
   const getBlog = (blogId) => {
-    axios
+    api
       .get(`/blogs/${blogId}`)
       .then((response) => {
         setBlog(response.data);
@@ -35,7 +35,7 @@ const AdmEditBlog = () => {
   };
 
   const getCategories = () => {
-    axios
+    api
       .get("/categories")
       .then((response) => {
         setCategories(response.data);
@@ -75,7 +75,7 @@ const AdmEditBlog = () => {
       id: id,
     };
 
-    axios
+    api
       .put(`/blogs/${id}`, updatedBlog)
       .then(() => {
         alert("Blog updated successfully!!");

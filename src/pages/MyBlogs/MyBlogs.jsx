@@ -17,7 +17,7 @@ const MyBlogs = () => {
   }, []);
 
   const getAuthBlogs = () => {
-    axios
+    api
       .get(`/blogs`)
       .then((response) => {
         setBlogs(response.data);
@@ -37,7 +37,7 @@ const MyBlogs = () => {
       return;
     }
 
-    axios
+    api
       .delete(`/blogs/${id}`)
       .then(() => {
         alert("Blog has been Deleted Successfully!!");
@@ -50,7 +50,7 @@ const MyBlogs = () => {
   };
 
   const getComments = () => {
-    axios
+    api
       .get("/comments")
       .then((response) => {
         setComments(response.data);

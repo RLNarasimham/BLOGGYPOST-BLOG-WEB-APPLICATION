@@ -22,7 +22,7 @@ const EditBlog = () => {
   }, [id]);
 
   const getBlog = () => {
-    axios
+    api
       .get(`/blogs/${id}`)
       .then((response) => {
         setBlog(response.data);
@@ -34,7 +34,7 @@ const EditBlog = () => {
   };
 
   const getCategories = () => {
-    axios
+    api
       .get(`/categories`)
       .then((response) => {
         setCategories(response.data);
@@ -60,7 +60,7 @@ const EditBlog = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
+    api
       .put(`/blogs/${id}`, blog)
       .then((res) => {
         alert("blog updated successfully");
