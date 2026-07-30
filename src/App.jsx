@@ -24,6 +24,7 @@ import ManageAuthors from "./pages/ManageAuthors/ManageAuthors";
 import AdmEditAuthor from "./pages/AdmEditAuthor/AdmEditAuthor";
 import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import ViewAuthModal from "./components/ViewAuthModal/ViewAuthModal";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="d-flex flex-column min-vh-100">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-grow-1">
         <Routes>
