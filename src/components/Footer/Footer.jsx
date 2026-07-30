@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../../context/AuthContext";
 import "./Footer.css";
 
 const Footer = () => {
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <footer className="text-bg-dark mt-auto py-3">
       <div className="container p-1">
@@ -34,23 +37,77 @@ const Footer = () => {
                 </Link>
               </li>
 
-              <li>
-                <Link to="/login" className="text-decoration-none">
-                  Author Login
-                </Link>
-              </li>
+              {!currentUser && (
+                <>
+                  <li>
+                    <Link to="/login" className="text-decoration-none">
+                      Author Login
+                    </Link>
+                  </li>
 
-              <li>
-                <Link to="/register" className="text-decoration-none">
-                  Register
-                </Link>
-              </li>
+                  <li>
+                    <Link to="/register" className="text-decoration-none">
+                      Register
+                    </Link>
+                  </li>
 
-              <li>
-                <Link to="/admin/login" className="text-decoration-none">
-                  Admin Login
-                </Link>
-              </li>
+                  <li>
+                    <Link to="/admin/login" className="text-decoration-none">
+                      Admin Login
+                    </Link>
+                  </li>
+                </>
+              )}
+
+              {currentUser?.role === "author" && (
+                <>
+                  <li>
+                    <Link
+                      to="/author/dashboard"
+                      className="text-decoration-none"
+                    >
+                      Dashboard
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/author/blogs" className="text-decoration-none">
+                      My Blogs
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/author/add" className="text-decoration-none">
+                      Add Blog
+                    </Link>
+                  </li>
+                </>
+              )}
+
+              {currentUser?.role === "admin" && (
+                <>
+                  <li>
+                    <Link
+                      to="/admin/dashboard"
+                      className="text-decoration-none"
+                    >
+                      Dashboard
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/admin/blogs" className="text-decoration-none">
+                      Manage Blogs
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/admin/authors" className="text-decoration-none">
+                      Manage Authors
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
 

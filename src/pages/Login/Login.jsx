@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate } from "react-router";
 import axios from "axios";
 import api from "../../api";
@@ -7,7 +7,15 @@ import { AuthContext } from "../../context/AuthContext";
 const Login = () => {
   const navigate = useNavigate();
 
-  const { setCurrentUser } = useContext(AuthContext);
+  const { currentUser, setCurrentUser } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (currentUser?.role === "author") {
+      navigate("/author/dashboard", { replace: true });
+    } else if (currentUser?.role === "admin") {
+      navigate("/admin/dashboard", { replace: true });
+    }
+  }, [currentUser, navigate]);
 
   const [formData, setFormData] = useState({
     email: "",

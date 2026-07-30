@@ -9,13 +9,21 @@ const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { setCurrentUser } = useContext(AuthContext);
+  const { currentUser, setCurrentUser } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (currentUser?.role === "admin") {
+      navigate("/admin/dashboard", { replace: true });
+    } else if (currentUser?.role === "author") {
+      navigate("/author/dashboard", { replace: true });
+    }
+  }, [currentUser, navigate]);
+
+  useEffect(() => {
     getAdmins();
-  });
+  }, []);
 
   const getAdmins = () => {
     api
