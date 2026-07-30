@@ -149,88 +149,66 @@ The application follows a component-based architecture, uses REST APIs through J
 
 ## Blogs Page
 
-*(Screenshot Here)*
+![BLOGS PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/blogs_page.png)
 
 ---
 
 ## Blog Details Page
 
-*(Screenshot Here)*
+![BLOG DETAILS PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/blogdetails_page1.png)
+
+![BLOG DETAILS PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/blogdetails_page2.png)
 
 ---
 
 ## Author Login Page
 
-*(Screenshot Here)*
+![AUTHOR LOGIN PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/author_login_page.png)
 
 ---
 
 ## Author Registration Page
 
-*(Screenshot Here)*
+![AUTHOR REGISTRATION PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/author_registration_page.png)
 
 ---
 
 ## Author Dashboard
 
-*(Screenshot Here)*
+![AUTHOR DASHBOARD PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/author_dashboard_page.png)
 
 ---
 
 ## Add Blog Page
 
-*(Screenshot Here)*
+![AUTHOR ADD BLOG PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/auth_add_blog_page.png)
 
 ---
 
 ## My Blogs Page
 
-*(Screenshot Here)*
+![AUTHOR MY BLOGS PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/auth_my_blogs_page.png)
 
 ---
 
 ## Edit Blog Page
 
-*(Screenshot Here)*
+![AUTHOR EDIT BLOG PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/auth_edit_blog_page.png)
 
 ---
 
 ## Admin Login Page
 
-*(Screenshot Here)*
+![ADMIN LOGIN PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/admin_login_page.png)
 
 ---
 
 ## Admin Dashboard
 
-*(Screenshot Here)*
-
----
-
-## Manage Blogs Page
-
-*(Screenshot Here)*
-
----
-
-## Admin Edit Blog Page
-
-*(Screenshot Here)*
-
----
-
-## Manage Authors Page
-
-*(Screenshot Here)*
-
----
-
-## Admin Edit Author Page
-
-*(Screenshot Here)*
+![ADMIN DASHBOARD PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/admin_dashboard_page.png)
 
 ---
 
 ## 404 Not Found Page
 
-*(Screenshot Here)*
+![NOT FOUND PAGE OF BLOGGYPOST BLOG WEB APPLICATION](./screenshots/not_found_page.png)
